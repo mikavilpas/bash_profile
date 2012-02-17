@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/bin
+export PATH=$PATH:/usr/bin:~/bin/
 export PATH=$PATH:$HOME/.cabal/bin/
 export TERM="xterm-256color"
 
