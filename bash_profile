@@ -12,6 +12,7 @@ export TERM="xterm-256color"
 # Handy Git bindings
 # For speed >9000 coding!
 #
+alias ga="git add"
 alias gs="git status"
 alias gc="git checkout"
 alias gb="git branch"
