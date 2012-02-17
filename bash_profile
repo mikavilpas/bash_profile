@@ -34,7 +34,9 @@ alias gsmfr="gsm foreach --recursive"
 source ~/.git-completion.sh
 
 # Show current branch in bash
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# Example:
+# user@host:~/git/bash_profile  (master)$
+PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w $(__git_ps1 " (%s)")\$ '
 
 # ls color
 alias ls='ls --color'
