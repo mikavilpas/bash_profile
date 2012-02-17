@@ -31,7 +31,7 @@ alias gsmfr="gsm foreach --recursive"
 # Source git completion commands
 # Taken from:
 # https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
-source .git-completion.sh
+source ~/.git-completion.sh
 
 # Show current branch in bash
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
