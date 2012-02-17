@@ -25,3 +25,6 @@ alias gpush!="git push origin HEAD"
 alias gpull="git pull"
 alias gsm="git submodule"
 alias gsmfr="gsm foreach --recursive"
+
+# ls color
+alias ls='ls --color'
