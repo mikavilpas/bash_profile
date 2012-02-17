@@ -1,5 +1,6 @@
 export PATH=$PATH:/usr/bin:~/bin/
 export PATH=$PATH:$HOME/.cabal/bin/
+export EDITOR="vim"
 export TERM="xterm-256color"
 
 # bash vi editing mode - Bart's Blog
