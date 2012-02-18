@@ -40,3 +40,7 @@ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w $(__git_ps1 " (%s)")\$ '
 
 # ls color
 alias ls='ls --color'
+
+# Use case insensitive completion with the readline library.
+# Could also be set in ~/.inputrc (without bind or quotes) but more convenient here IMO.
+bind "set completion-ignore-case on"
