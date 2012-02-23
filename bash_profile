@@ -27,6 +27,9 @@ alias gpush!="git push origin HEAD"
 alias gpull="git pull"
 alias gsm="git submodule"
 alias gsmfr="gsm foreach --recursive"
+# gui - Visualizing branch topology in git - Stack Overflow
+# http://stackoverflow.com/a/1838938/1223426
+alias glb='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 
 # Source git completion commands
 # Taken from:
