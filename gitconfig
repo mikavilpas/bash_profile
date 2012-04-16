@@ -4,8 +4,22 @@
 [merge]
 	tool = vimdiff
 [alias]
-	co = checkout
-	m = merge
+	c    = checkout
+	m    = merge
+	l    = log --stat
+	lp   = log -p
+	ga   = add
+	s    = status
+	b    = branch
+	d    = diff
+	dc   = diff --cached
+	r    = rebase
+	sh   = show
+	sm   = submodule
+	smfr = submodule foreach --recursive
+    # gui - Visualizing branch topology in git - Stack Overflow
+    # http://stackoverflow.com/a/1838938/1223426
+	lb   = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
 
 # Git Colors
 # http://jblevins.org/log/git-colors
