@@ -34,3 +34,5 @@ plugins=(git vi-mode lol)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+bindkey -M vicmd 'K' history-incremental-search-backward
+bindkey -M vicmd 'J' history-incremental-search-forward
