@@ -36,3 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 bindkey -M vicmd 'K' history-incremental-search-backward
 bindkey -M vicmd 'J' history-incremental-search-forward
+
+# (directory navigation) complete .. to ../
+# http://stackoverflow.com/questions/564648/zsh-tab-completion-for-cd#comment10443433_716926
+zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
