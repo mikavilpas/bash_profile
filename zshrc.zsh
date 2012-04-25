@@ -47,3 +47,6 @@ zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(
 # Alias for git flow
 alias gf='git flow'
 compdef _git gf=git-flow
+# Git stashes
+alias gss="git stash save"  # needs no completion since takes no arguments.
+alias gsa="git stash apply" # same thing
