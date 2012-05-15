@@ -4,3 +4,6 @@
 [submodule "autojump"]
 	path = autojump
 	url = git://github.com/joelthelion/autojump.git
+[submodule "gitflow"]
+	path = gitflow
+	url = https://github.com/boiler23/gitflow.git
