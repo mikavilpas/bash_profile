@@ -4,6 +4,3 @@
 [submodule "autojump"]
 	path = autojump
 	url = git://github.com/joelthelion/autojump.git
-[submodule "gitflow"]
-	path = gitflow
-	url = git://github.com/nvie/gitflow.git
