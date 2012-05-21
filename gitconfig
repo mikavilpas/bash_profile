@@ -44,3 +44,6 @@
   added = yellow
   changed = green
   untracked = cyan
+  
+[branch]
+	autosetuprebase = always
