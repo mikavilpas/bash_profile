@@ -9,6 +9,10 @@ export TERM="xterm-256color"
     # ^l clear screen
     bind -m vi-insert "\C-l":clear-screen
 
+# Monitor a command with watch
+# -d switch will show differences visually.
+alias monitor="watch -d --color"
+
 # Handy Git bindings
 # For speed >9000 coding!
 #
