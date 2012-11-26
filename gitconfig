@@ -47,3 +47,5 @@
   
 [branch]
 	autosetuprebase = always
+[rerere]
+	enabled = 1
