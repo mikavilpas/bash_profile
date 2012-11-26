@@ -56,3 +56,6 @@ alias gsa="git stash apply" # same thing
 # Each invoke should create a new frame (X window) to prevent the main emacs
 # window being moved to the current workspace.
 EDITOR="emacsclient --create-frame"
+
+# Quickly edit a file with "e file"
+alias e="$EDITOR"
