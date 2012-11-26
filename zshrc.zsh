@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+PATH=$PATH:$HOME/.cabal/bin/
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
