@@ -51,3 +51,8 @@ compdef _git gf=git-flow
 # Git stashes
 alias gss="git stash save"  # needs no completion since takes no arguments.
 alias gsa="git stash apply" # same thing
+
+# Use emacsclient as the EDITOR
+# Each invoke should create a new frame (X window) to prevent the main emacs
+# window being moved to the current workspace.
+EDITOR="emacsclient --create-frame"
