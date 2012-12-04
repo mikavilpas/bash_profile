@@ -50,3 +50,5 @@ compdef _git gf=git-flow
 # Git stashes
 alias gss="git stash save"  # needs no completion since takes no arguments.
 alias gsa="git stash apply" # same thing
+
+alias e="emacsclient --create-frame"
