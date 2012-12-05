@@ -2,7 +2,7 @@
 	email = mika.vilpas@bowsville.fi
 	name = Mika Vilpas
 [merge]
-	tool = vimdiff
+	tool = meld
 [alias]
 	c    = checkout
 	m    = merge
