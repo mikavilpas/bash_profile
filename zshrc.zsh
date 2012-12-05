@@ -51,7 +51,7 @@ compdef _git gf=git-flow
 alias gss="git stash save"  # needs no completion since takes no arguments.
 alias gsa="git stash apply" # same thing
 
-alias e="emacsclient --create-frame"
+alias e="emacsclient --create-frame --no-wait"
 
 bindkey '^P' up-line-or-search
 bindkey '^N' down-line-or-search
