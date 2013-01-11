@@ -1,6 +1,14 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# --alternate-editor=EDITOR
+# if the Emacs server is not running, run the specified editor
+# instead.  This can also be specified via the `ALTERNATE_EDITOR'
+# environment variable.  If the value of EDITOR is the empty string,
+# run `emacs --daemon' to start Emacs in daemon mode, and try to
+# connect to it.
+EDITOR="emacsclient --alternate-editor=''"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
