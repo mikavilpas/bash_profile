@@ -69,3 +69,11 @@ bindkey '^S' history-incremental-search-forward
 # Enable using complicated globbing,
 # such as ^dangerousFile for all but "dangerousFile"
 setopt extendedglob
+
+# Complete the current word from all words in the command history with
+# control + space
+#     The Zsh Pony
+#     http://grml.org/zsh-pony/#sec-10-12
+zle -C hist-complete complete-word _generic
+zstyle ':completion:hist-complete:*' completer _history
+bindkey "^@" hist-complete
