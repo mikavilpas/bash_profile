@@ -51,11 +51,16 @@ compdef _git gf=git-flow
 # Git stashes
 alias gss="git stash save"  # needs no completion since takes no arguments.
 alias gsa="git stash apply" # same thing
+# Easily access personal binaries / scripts directory
+PATH=$PATH:~/bin/
 
-# Use emacsclient as the EDITOR
-# Each invoke should create a new frame (X window) to prevent the main emacs
-# window being moved to the current workspace.
-EDITOR="emacsclient --create-frame"
+alias e="emacsclient --create-frame --no-wait"
 
-# Quickly edit a file with "e file"
-alias e="$EDITOR"
+bindkey '^P' up-line-or-search
+bindkey '^N' down-line-or-search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+
+# Enable using complicated globbing,
+# such as ^dangerousFile for all but "dangerousFile"
+setopt extendedglob
