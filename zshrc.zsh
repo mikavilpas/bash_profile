@@ -53,7 +53,7 @@ alias gsa="git stash apply" # same thing
 # Easily access personal binaries / scripts directory
 PATH=$PATH:~/bin/:~/.cabal/bin/
 
-alias e="emacsclient --create-frame --no-wait"
+alias e="emacsclient --no-wait"
 
 bindkey '^P' up-line-or-search
 bindkey '^N' down-line-or-search
