@@ -2,7 +2,7 @@
         email = mika.vilpas@gmail.com
         name = Mika Vilpas
 [merge]
-	tool = meld
+        tool = meld
 [alias]
 	c    = checkout
 	m    = merge
