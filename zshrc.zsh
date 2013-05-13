@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+PATH=$PATH:$HOME/.cabal/bin/
 
 # --alternate-editor=EDITOR
 # if the Emacs server is not running, run the specified editor
@@ -37,7 +38,7 @@ ZSH_THEME="sunaku"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode lol git-flow)
+plugins=(git vi-mode lol)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,8 +59,10 @@ compdef _git gf=git-flow
 # Git stashes
 alias gss="git stash save"  # needs no completion since takes no arguments.
 alias gsa="git stash apply" # same thing
+# Easily access personal binaries / scripts directory
+PATH=$PATH:~/bin/:~/.cabal/bin/
 
-alias e="emacsclient --create-frame --no-wait"
+alias e="emacsclient --no-wait"
 
 bindkey '^P' up-line-or-search
 bindkey '^N' down-line-or-search
@@ -70,10 +73,11 @@ bindkey '^S' history-incremental-search-forward
 # such as ^dangerousFile for all but "dangerousFile"
 setopt extendedglob
 
-# Complete the current word from all words in the command history with
-# control + space
-#     The Zsh Pony
-#     http://grml.org/zsh-pony/#sec-10-12
+# Start tips taken from http://grml.org/zsh-pony/
+#
+# Complete words in history Control-space
 zle -C hist-complete complete-word _generic
 zstyle ':completion:hist-complete:*' completer _history
 bindkey "^@" hist-complete
+
+# End http://grml.org/zsh-pony/

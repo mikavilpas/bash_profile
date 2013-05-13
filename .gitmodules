@@ -6,4 +6,7 @@
 	url = git://github.com/joelthelion/autojump.git
 [submodule "gitflow"]
 	path = gitflow
-	url = git://github.com/nvie/gitflow.git
+	url = https://github.com/boiler23/gitflow.git
+[submodule "git-flow-completion"]
+	path = git-flow-completion
+	url = https://github.com/boiler23/git-flow-completion.git

@@ -1,8 +1,8 @@
 [user]
-	email = mika.vilpas@bowsville.fi
-	name = Mika Vilpas
+        email = mika.vilpas@gmail.com
+        name = Mika Vilpas
 [merge]
-	tool = meld
+        tool = meld
 [alias]
 	c    = checkout
 	m    = merge
@@ -44,3 +44,8 @@
   added = yellow
   changed = green
   untracked = cyan
+  
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = 1
