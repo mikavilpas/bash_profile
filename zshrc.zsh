@@ -81,3 +81,6 @@ zstyle ':completion:hist-complete:*' completer _history
 bindkey "^@" hist-complete
 
 # End http://grml.org/zsh-pony/
+
+# Allow using tramp with the zsh shell.
+[ $TERM = "dumb" ] && unsetopt zle && PS1='$ '
