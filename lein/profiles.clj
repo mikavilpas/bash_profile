@@ -22,6 +22,17 @@
    ;; 6
    ;; (6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6)
    [spyscope "0.1.4"]
+
+   ;; Refresh namespaces without restarting the repl
+   ;;
+   ;; http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded
+   ;; https://github.com/clojure/tools.namespace
+   ;;
+   ;; Usage: call (refresh) in the repl
+   ;;
+   ;; TODO check out usage instructions for
+   ;; https://github.com/ciderale/quick-reset
+   [org.clojure/tools.namespace "0.2.4"]
    ]
   :plugins [[cider/cider-nrepl "0.1.0-SNAPSHOT"]]
   :injections [
@@ -30,7 +41,9 @@
                            '[[vinyasa.inject inject]
                              [vinyasa.pull pull]
                              [vinyasa.lein lein]
-                             [vinyasa.reimport reimport]])
+                             [vinyasa.reimport reimport]
+                             [clojure.tools.namespace.repl refresh]
+                             ])
 
                (require 'spyscope.core)
                ]}}
