@@ -33,6 +33,9 @@
    ;; TODO check out usage instructions for
    ;; https://github.com/ciderale/quick-reset
    [org.clojure/tools.namespace "0.2.4"]
+
+   ;; https://github.com/AvisoNovate/pretty
+   [io.aviso/pretty "0.1.8"]
    ]
   :plugins [[cider/cider-nrepl "0.1.0-SNAPSHOT"]]
   :injections [
@@ -47,4 +50,23 @@
                              ])
 
                (require 'spyscope.core)
-               ]}}
+
+               ;; http://z.caudate.me/give-your-clojure-workflow-more-flow/
+               ;; The best stacktrace output library is pretty. We
+               ;; replace the old stacktrace library with the pretty
+               ;; version using this:
+               (require 'io.aviso.repl 
+                        'clojure.repl 
+                        'clojure.main)
+
+               (alter-var-root #'clojure.main/repl-caught
+                               (constantly @#'io.aviso.repl/pretty-pst))
+               (alter-var-root #'clojure.repl/pst
+                               (constantly @#'io.aviso.repl/pretty-pst))
+               ]
+  ;; Use pretty printing in the leiningen repl always
+  ;; https://github.com/AvisoNovate/pretty
+  :repl-options {:nrepl-middleware
+                 [io.aviso.nrepl/pretty-middleware
+                  ]}
+  }}
