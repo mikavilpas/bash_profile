@@ -43,6 +43,7 @@
                              [vinyasa.lein lein]
                              [vinyasa.reimport reimport]
                              [clojure.tools.namespace.repl refresh]
+                             [clojure.pprint [pprint >pprint]]
                              ])
 
                (require 'spyscope.core)
