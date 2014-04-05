@@ -43,6 +43,10 @@
    ;; execution hits that point, it's given over to the REPL. Once
    ;; you're done, enter (), and the regular execution is resumed.
    [org.clojars.gjahad/debug-repl "0.3.3"]
+
+   ;; Browse clojure namespaces with a gui
+   ;; http://dev.solita.fi/2014/03/18/pimp-my-repl.html
+   [clj-ns-browser "1.3.1"]
    ]
   :plugins [[cider/cider-nrepl "0.1.0-SNAPSHOT"]]
   :injections [
@@ -75,6 +79,11 @@
                (require 'alex-and-georges.debug-repl)
                (vinyasa.inject/inject 'clojure.core '>
                                       '[[alex-and-georges.debug-repl debug-repl]])
+
+               ;; clj-ns-browser
+               (require 'clj-ns-browser.sdoc)
+               (vinyasa.inject/inject 'clojure.core '>
+                                      '[[clj-ns-browser.sdoc sdoc]])
                ]
   ;; Use pretty printing in the leiningen repl always
   ;; https://github.com/AvisoNovate/pretty
