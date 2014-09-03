@@ -4,6 +4,8 @@ PATH=$PATH:$HOME/.cabal/bin/
 PATH=$PATH:$HOME/bin/
 PATH=$PATH:$HOME/bin/haskell-scripts/
 PATH=$PATH:$HOME/git/bash_profile/zshrc.zsh
+# Use newer mono files in place of old ones
+PATH=/opt/monodevelop/bin/:$PATH
 
 # --alternate-editor=EDITOR
 # if the Emacs server is not running, run the specified editor
