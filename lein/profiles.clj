@@ -46,8 +46,7 @@
    [midje "1.6.3"]
    ]
   :plugins [[cider/cider-nrepl "0.7.0"]]
-  :injections [
-               (require '[vinyasa.inject :as inj])
+  :injections [(require '[vinyasa.inject :as inj])
                (inj/inject 'clojure.core
                            '[[vinyasa.inject inject]
                              [vinyasa.pull pull]
