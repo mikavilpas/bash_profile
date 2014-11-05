@@ -1,5 +1,6 @@
 export PATH=$PATH:/usr/bin:~/bin/
 export PATH=$PATH:$HOME/.cabal/bin/
+export PATH=$PATH:$HOME/.cask/bin/
 export EDITOR="vim"
 export TERM="xterm-256color"
 
