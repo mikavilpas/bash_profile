@@ -1,3 +1,3 @@
 {:user
  {:plugins [[cider/cider-nrepl "0.7.0"]
-            [lein-midje "3.1.3"]]}}
+            [quickie "0.3.6"]]}}
