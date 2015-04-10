@@ -1,3 +1,3 @@
 {:user
- {:plugins [[cider/cider-nrepl "0.7.0"]
-            [quickie "0.3.6"]]}}
+ {:plugins [[cider/cider-nrepl "0.8.2"]
+            [lein-autoexpect "1.4.0"]]}}
