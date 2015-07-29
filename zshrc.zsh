@@ -5,8 +5,6 @@ PATH=$PATH:$HOME/bin/
 PATH=$PATH:$HOME/bin/haskell-scripts/
 PATH=$PATH:$HOME/git/bash_profile/zshrc.zsh
 PATH=$PATH:$HOME"/.cask/bin"
-# Use newer mono files in place of old ones
-PATH=/opt/monodevelop/bin/:$PATH
 
 # --alternate-editor=EDITOR
 # if the Emacs server is not running, run the specified editor
@@ -90,3 +88,5 @@ bindkey "^@" hist-complete
 
 # Allow using tramp with the zsh shell.
 [ $TERM = "dumb" ] && unsetopt zle && PS1='$ '
+
+[ -s "/home/mika/.dnx/dnvm/dnvm.sh" ] && . "/home/mika/.dnx/dnvm/dnvm.sh" # Load dnvm

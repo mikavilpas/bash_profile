@@ -52,3 +52,5 @@ alias ls='ls --color'
 # Use case insensitive completion with the readline library.
 # Could also be set in ~/.inputrc (without bind or quotes) but more convenient here IMO.
 bind "set completion-ignore-case on"
+
+[ -s "/home/mika/.dnx/dnvm/dnvm.sh" ] && . "/home/mika/.dnx/dnvm/dnvm.sh" # Load dnvm
