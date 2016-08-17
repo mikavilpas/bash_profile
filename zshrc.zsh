@@ -1,9 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-PATH=$PATH:$HOME/.cabal/bin/
 PATH=$PATH:$HOME/bin/
-PATH=$PATH:$HOME/bin/haskell-scripts/
-PATH=$PATH:$HOME/git/bash_profile/zshrc.zsh
 PATH=$PATH:$HOME"/.cask/bin"
 
 # --alternate-editor=EDITOR
