@@ -39,7 +39,7 @@ ZSH_THEME="blinks"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode lol vagrant docker)
+plugins=(git vi-mode lol vagrant docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -63,6 +63,7 @@ alias gsa="git stash apply" # same thing
 # Easily access personal binaries / scripts directory
 PATH=$PATH:~/bin/:~/.cabal/bin/
 
+alias dc="docker-compose"
 alias e="emacsclient --no-wait"
 
 bindkey '^P' up-line-or-search
