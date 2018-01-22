@@ -54,3 +54,7 @@ alias ls='ls --color'
 bind "set completion-ignore-case on"
 
 [ -s "/home/mika/.dnx/dnvm/dnvm.sh" ] && . "/home/mika/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+# Use zsh as the shell. For my work system which doesn't support chsh (change
+# shell command), because of the network domain used to control user accounts.
+zsh
