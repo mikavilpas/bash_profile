@@ -39,7 +39,7 @@ ZSH_THEME="blinks"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode lol vagrant docker docker-compose httpie)
+plugins=(git vi-mode lol vagrant docker docker-compose httpie pyenv git-extras zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,3 +93,12 @@ bindkey "^@" hist-complete
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 source ~/.profile
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Load pyenv automatically by adding
+# the following to ~/.zshrc:
+
+# export PATH="/home/mvilpas/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
