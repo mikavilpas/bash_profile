@@ -36,11 +36,6 @@ alias gsmfr="gsm foreach --recursive"
 # http://stackoverflow.com/a/1838938/1223426
 alias glb='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 
-# Source git completion commands
-# Taken from:
-# https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
-source ~/.git-completion.sh
-
 # Show current branch in bash
 # Example:
 # user@host:~/git/bash_profile  (master)$
@@ -54,10 +49,6 @@ alias ls='ls --color'
 bind "set completion-ignore-case on"
 
 [ -s "/home/mika/.dnx/dnvm/dnvm.sh" ] && . "/home/mika/.dnx/dnvm/dnvm.sh" # Load dnvm
-
-export PATH="~/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # Use zsh as the shell. For my work system which doesn't support chsh (change
 # shell command), because of the network domain used to control user accounts.

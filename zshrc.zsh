@@ -2,6 +2,8 @@
 ZSH=$HOME/.oh-my-zsh
 PATH=$PATH:$HOME/bin/
 PATH=$PATH:$HOME"/.cask/bin"
+PATH=$PATH:$HOME"/.nvm/versions/node/v10.15.3/bin"
+
 
 # --alternate-editor=EDITOR
 # if the Emacs server is not running, run the specified editor
@@ -15,7 +17,7 @@ EDITOR="emacsclient --alternate-editor=''"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="blinks"
+ZSH_THEME=powerlevel10k/powerlevel10k
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -88,6 +90,11 @@ bindkey "^@" hist-complete
 [ $TERM = "dumb" ] && unsetopt zle && PS1='$ '
 
 [ -s "/home/mika/.dnx/dnvm/dnvm.sh" ] && . "/home/mika/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+# load nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # for rvm
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
