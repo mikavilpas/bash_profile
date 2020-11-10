@@ -41,7 +41,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode lol vagrant docker docker-compose httpie pyenv git-extras zsh-autosuggestions)
+plugins=(git vi-mode docker docker-compose httpie git-extras zsh-autosuggestions nvm kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
